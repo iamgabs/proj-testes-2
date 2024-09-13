@@ -2,35 +2,29 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ main, hml, dev ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, hml, dev ]
+    branches: [ main ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
-
+    
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout e troca de branch 
+        uses: actions/checkout@v4
+        with: 
+          ref: ${{ github.event.ref }}
+       
+      - name: Setup ambiente python 
+        uses: actions/setup-python@v5
+        with: 
+          python-version: 3.9 
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.12'  
+      - name: Instalando dependencias 
+        run: |
+          python -m pip install --upgrade pip 
+          pip install -r requirements.txt
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-    - name: Run tests
-      continue-on-error: true
-      run: |
-        if [ -f pytest.ini ] || [ -d tests ]; then
-          pip install pytest
-          pytest || true
-        fi
-
-    - name: Run the app
-      run: python src/app.py
+      - name: Executando testes
+        run: pytest
