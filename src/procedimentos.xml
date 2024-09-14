@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<procedimentos>
+    <!-- SOMA -->
+    <procedimento num="0" desc="soma">
+        <caso num="0">
+            <dado1>10</dado1>
+            <dado2>20</dado2>
+        </caso>
+        <caso num="1">
+            <dado1>30</dado1>
+            <dado2>40</dado2>
+        </caso>
+        <caso num="2">
+            <dado1>-1</dado1>
+            <dado2>-3</dado2>
+        </caso>
+        <caso num="3">
+            <dado1>-50</dado1>
+            <dado2>-40</dado2>
+            <dado3>90</dado3>
+            <dado4>10</dado4>
+        </caso>
+        <caso num="4">
+            <dado1>-30</dado1>
+            <dado2>40</dado2>
+        </caso>
+    </procedimento>
+    <!-- SUBTRAÇÃO -->
+    <procedimento num="0" desc="subtração">
+        <caso num="0">
+            <dado1>10</dado1>
+            <dado2>20</dado2>
+        </caso>
+        <caso num="1">
+            <dado1>30</dado1>
+            <dado2>40</dado2>
+        </caso>
+    </procedimento>
+    <!-- MULTIPLICAÇÃO -->
+    <procedimento num="1" desc="multiplicação">
+        <caso num="0">
+            <dado1>2</dado1>
+            <dado2>5</dado2>
+        </caso>
+    </procedimento>
+    <!-- DIVISÃO -->
+    <procedimento num="1" desc="divisão">
+        <caso num="0">
+            <dado1>2</dado1>
+            <dado2>5</dado2>
+        </caso>
+    </procedimento>
+    <!-- POTENCIAÇÃO -->
+    <procedimento num="1" desc="potenciação">
+        <caso num="0">
+            <dado1>2</dado1>
+            <dado2>5</dado2>
+        </caso>
+    </procedimento>
+</procedimentos>
