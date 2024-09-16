@@ -28,8 +28,9 @@
     <!-- SUBTRAÇÃO -->
     <procedimento num="0" desc="subtração">
         <caso num="0">
-            <dado1>10</dado1>
-            <dado2>20</dado2>
+            <dado1>(-1)</dado1>
+            <dado2>(-2)</dado2>
+            <dado3>(-3)</dado3>
         </caso>
         <caso num="1">
             <dado1>30</dado1>
