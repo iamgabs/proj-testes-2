@@ -1,12 +1,12 @@
-def get_operation(procedimento_desc, expression):
+def get_operation(procedimento_desc, expression, result):
     parts = expression.split()
     
     hash_map = {
-        "soma": " + ".join(parts),
-        "subtração": " - ".join(parts),
-        "multiplicação": " * ".join(parts),
-        "divisão": " / ".join(parts),
-        "potenciação": f"{parts[0]}^{parts[1]}" if len(parts) >= 2 else None
+        "soma": f"{' + '.join(parts)} = {result}",
+        "subtração": f"{' - '.join(parts)} = {result}",
+        "multiplicação": f"{' * '.join(parts)} = {result}",
+        "divisão": f"{' / '.join(parts)} = {result}",
+        "potenciação": f"{parts[0]}^{parts[1]} = {result}" if len(parts) >= 2 else None
     }
     
     operation = hash_map.get(procedimento_desc)

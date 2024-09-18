@@ -6,7 +6,7 @@ from selenium.webdriver.edge.options import Options
 from typing import List, Tuple
 from utils.get_operations import get_operation
 
-def execute_operations(operations: List[Tuple[str, List[str]]]):
+def execute_operations(operations: List[Tuple[str, List[str], List[float]]]):
     """
     Executa as operações na calculadora usando o Selenium.
     
@@ -19,22 +19,25 @@ def execute_operations(operations: List[Tuple[str, List[str]]]):
 
     driver.get('https://www.calculadoraonline.com.br/basica')
 
-    for procedimento_desc, expressions in operations:
-        print(f'Executando operação: {procedimento_desc}')
+    for procedimento_desc, expressions, results in operations:
+        print(f'\n** TESTANDO OPERAÇÃO: {procedimento_desc} **')
 
-        for expression in expressions:
-            print(f'  Expressão: {expression}')
-            operation = get_operation(procedimento_desc, expression)
+        for exp, res in zip(expressions, results):
+            operation = get_operation(procedimento_desc, exp, res)
+            print(f'{operation}')
+
+            calc = operation.split(' =')
+            calculation = calc[0].strip()
 
             input_field = driver.find_element(By.XPATH, '//*[@id="TIExp"]')
             input_field.clear()
-            input_field.send_keys(operation)
+            input_field.send_keys(calculation)
 
             driver.find_element(By.XPATH, '//*[@id="b27"]').click()
 
-            time.sleep(3)
+            time.sleep(1.5)
 
-            result = input_field.get_attribute("value")
-            print(f'    Resultado: {result}')
+            real_result = input_field.get_attribute("value")
+            print(f'--> RESULTADO OBTIDO: {real_result}\n')
 
     driver.quit()

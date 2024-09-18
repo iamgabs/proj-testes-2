@@ -1,6 +1,6 @@
 # imports
 import unittest
-from src.services.sum import DoSum as operation
+from src.services import DoSum as operation
 
 class TestCaseSum(unittest.TestCase):
 
