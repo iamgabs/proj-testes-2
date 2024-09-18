@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.service import Service as EdgeService
 from selenium.webdriver.edge.options import Options
 from typing import List, Tuple
-from utils.get_operations import get_operation
+from src.utils.get_operations import get_operation
 
 def execute_operations(operations: List[Tuple[str, List[str], List[float]]]):
     """
