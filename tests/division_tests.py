@@ -1,6 +1,6 @@
 # imports
 import unittest
-from src.services.division import Dodivision as operation
+from src.services import Dodivision as operation
 
 class TestCaseDivision(unittest.TestCase):
     

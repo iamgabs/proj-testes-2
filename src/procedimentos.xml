@@ -3,59 +3,147 @@
     <!-- SOMA -->
     <procedimento num="0" desc="soma">
         <caso num="0">
-            <dado1>10</dado1>
-            <dado2>20</dado2>
+            <dado>10</dado>
+            <dado>20</dado>
+            <resultado>30</resultado>
         </caso>
         <caso num="1">
-            <dado1>30</dado1>
-            <dado2>40</dado2>
+            <dado>-5</dado>
+            <dado>(-15)</dado>
+            <resultado>-20</resultado>
         </caso>
         <caso num="2">
-            <dado1>-1</dado1>
-            <dado2>-3</dado2>
+            <dado>-1</dado>
+            <dado>3</dado>
+            <resultado>2</resultado>
         </caso>
         <caso num="3">
-            <dado1>-50</dado1>
-            <dado2>-40</dado2>
-            <dado3>90</dado3>
-            <dado4>10</dado4>
+            <dado>-18</dado>
+            <dado>0</dado>
+            <resultado>-18</resultado>
         </caso>
         <caso num="4">
-            <dado1>-30</dado1>
-            <dado2>40</dado2>
+            <dado>2.5</dado>
+            <dado>4.3</dado>
+            <resultado>6.8</resultado>
         </caso>
     </procedimento>
+    
     <!-- SUBTRAÇÃO -->
-    <procedimento num="0" desc="subtração">
+    <procedimento num="1" desc="subtração">
         <caso num="0">
-            <dado1>(-1)</dado1>
-            <dado2>(-2)</dado2>
-            <dado3>(-3)</dado3>
+            <dado>25</dado>
+            <dado>10</dado>
+            <resultado>15</resultado>
         </caso>
         <caso num="1">
-            <dado1>30</dado1>
-            <dado2>40</dado2>
+            <dado>-8</dado>
+            <dado>3</dado>
+            <resultado>-11</resultado>
+        </caso>
+        <caso num="2">
+            <dado>0</dado>
+            <dado>(-12)</dado>
+            <resultado>12</resultado>
+        </caso>
+        <caso num="3">
+            <dado>50</dado>
+            <dado>100</dado>
+            <resultado>-50</resultado>
+        </caso>
+        <caso num="4">
+            <dado>12.75</dado>
+            <dado>4.25</dado>
+            <resultado>8.50</resultado>
         </caso>
     </procedimento>
+
     <!-- MULTIPLICAÇÃO -->
-    <procedimento num="1" desc="multiplicação">
+    <procedimento num="2" desc="multiplicação">
         <caso num="0">
-            <dado1>2</dado1>
-            <dado2>5</dado2>
+            <dado>5</dado>
+            <dado>3</dado>
+            <resultado>15</resultado>
+        </caso>
+        <caso num="1">
+            <dado>-4</dado>
+            <dado>7</dado>
+            <resultado>-28</resultado>
+        </caso>
+        <caso num="2">
+            <dado>0</dado>
+            <dado>12</dado>
+            <resultado>0</resultado>
+        </caso>
+        <caso num="3">
+            <dado>6.5</dado>
+            <dado>2.0</dado>
+            <resultado>13.0</resultado>
+        </caso>
+        <caso num="4">
+            <dado>-3</dado>
+            <dado>(-8)</dado>
+            <resultado>24</resultado>
         </caso>
     </procedimento>
+
+
     <!-- DIVISÃO -->
-    <procedimento num="1" desc="divisão">
+    <procedimento num="3" desc="divisão">
         <caso num="0">
-            <dado1>2</dado1>
-            <dado2>5</dado2>
+            <dado>20</dado>
+            <dado>4</dado>
+            <resultado>5</resultado>
+        </caso>
+        <caso num="1">
+            <dado>-15</dado>
+            <dado>3</dado>
+            <resultado>-5</resultado>
+        </caso>
+        <caso num="2">
+            <dado>0</dado>
+            <dado>7</dado>
+            <resultado>0</resultado>
+        </caso>
+        <caso num="3">
+            <dado>9</dado>
+            <dado>2.5</dado>
+            <resultado>3.6</resultado>
+        </caso>
+        <caso num="4">
+            <dado>12</dado>
+            <dado>(-4)</dado>
+            <resultado>-3</resultado>
         </caso>
     </procedimento>
+
     <!-- POTENCIAÇÃO -->
-    <procedimento num="1" desc="potenciação">
+    <procedimento num="4" desc="potenciação">
         <caso num="0">
-            <dado1>2</dado1>
-            <dado2>5</dado2>
+            <dado>2</dado>
+            <dado>3</dado>
+            <resultado>8</resultado>
+        </caso>
+        <caso num="1">
+            <dado>-4</dado>
+            <dado>2</dado>
+            <resultado>16</resultado>
+        </caso>
+        <caso num="2">
+            <dado>9</dado>
+            <dado>0</dado>
+            <resultado>1</resultado>
+        </caso>
+        <caso num="3">
+            <dado>5</dado>
+            <dado>(-2)</dado>
+            <resultado>0.04</resultado>
+        </caso>
+        <caso num="4">
+            <dado>2.5</dado>
+            <dado>3</dado>
+            <resultado>15.625</resultado>
         </caso>
     </procedimento>
+
 </procedimentos>
