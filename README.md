@@ -2,9 +2,9 @@
 
 ### Grupo
 
-Ester Vieira
-Gabriel Carvalho
-Manoel Elias
+- Ester Vieira
+- Gabriel Carvalho
+- Manoel Elias
 
 Criar e ativar ambiente virtual 
 ```bash
@@ -28,4 +28,9 @@ pip install -r requirements.txt
 Executar o app 
 ```bash
 python -m src.app
+```
+
+Executar os testes
+```bash
+pytest
 ```
