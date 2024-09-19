@@ -11,7 +11,8 @@ def execute_operations(operations: List[Tuple[str, List[str], List[float]]]):
     Executa as operações na calculadora usando o Selenium.
     
     Args:
-        operations (List[Tuple[str, List[str]]]): Lista de tuplas contendo a descrição da operação e uma lista de expressões.
+        operations (List[Tuple[str, List[str]]]): Lista de tuplas 
+        contendo a descrição da operação e uma lista de expressões.
     """
     edge_options = Options()
     edge_options.add_argument('--headless')  
