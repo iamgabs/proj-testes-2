@@ -8,7 +8,7 @@ class TestCaseSum(unittest.TestCase):
             (
                 'soma',
                 ['10 20', '-5 (-15)', '-1 3', '-18 0', '2.5 4.3'],
-                [30.0, -20.0, 2.0, -18.0, 6.8]
+                ['30', '-20', '2', '-18', '6,8']
             )
         ]
     
@@ -16,4 +16,11 @@ class TestCaseSum(unittest.TestCase):
         """
         Test for each sum operation in the cases.
         """
-        execute_operations(self.sum_operations)
+        obtained_results = execute_operations(self.sum_operations)
+
+        print(f'Resultados obtidos: {obtained_results}')
+        
+        expected_results = self.sum_operations[0][2]
+
+        for obtained, expected in zip(obtained_results, expected_results):
+            self.assertEqual(obtained, expected)
