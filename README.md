@@ -1,3 +1,11 @@
+# IFPE - Garanhuns
+
+### Grupo
+
+Ester Vieira
+Gabriel Carvalho
+Manoel Elias
+
 Criar e ativar ambiente virtual 
 ```bash
 python -m venv venv
