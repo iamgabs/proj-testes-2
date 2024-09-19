@@ -19,6 +19,8 @@ def execute_operations(operations: List[Tuple[str, List[str], List[float]]]):
 
     driver.get('https://www.calculadoraonline.com.br/basica')
 
+    real_results = []
+
     for procedimento_desc, expressions, results in operations:
         print(f'\n** TESTANDO OPERAÇÃO: {procedimento_desc} **')
 
@@ -38,6 +40,8 @@ def execute_operations(operations: List[Tuple[str, List[str], List[float]]]):
             time.sleep(1.5)
 
             real_result = input_field.get_attribute("value")
+            real_results.append(real_result)
             print(f'--> RESULTADO OBTIDO: {real_result}\n')
 
     driver.quit()
+    return real_results
