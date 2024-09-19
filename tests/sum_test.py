@@ -16,4 +16,11 @@ class TestCaseSum(unittest.TestCase):
         """
         Test for each sum operation in the cases.
         """
-        execute_operations(self.sum_operations)
+        obtained_results = execute_operations(self.sum_operations)
+
+        print(f'Resultados obtidos: {obtained_results}')
+        
+        expected_results = self.sum_operations[0][2]
+
+        for obtained, expected in zip(obtained_results, expected_results):
+            self.assertEqual(obtained, expected)
