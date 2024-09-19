@@ -12,6 +12,6 @@ base_directory = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(base_directory, 'procedimentos.xml')
 
 if __name__ == "__main__":
+    # TODO executar por UI - tkinter
     operations:List[Tuple[str, List[str]]] = read_xml(file_path)
-    print(operations)
-    # execute_operations(operations)
+    execute_operations(operations)

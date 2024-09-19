@@ -17,3 +17,7 @@ Instalar as dependências
 pip install -r requirements.txt
 ```
 
+Executar o app 
+```bash
+python -m src.app
+```

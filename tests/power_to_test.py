@@ -13,7 +13,7 @@ class TestCasePowerTo(unittest.TestCase):
             )
         ]
     
-    def test_multiplication_operations(self) -> None:
+    def test_power_operations(self) -> None:
         """
         Test for each sum operation in the cases.
         """
